@@ -21,9 +21,9 @@ Proyecto desarrollado en React.js para realizar busqueda de peliculas a traves d
 npm install
 ```
 
-5.Entra en [omdb](http://www.omdbapi.com) y obten tu key de uso de la API.
+5. Entra en [omdb](http://www.omdbapi.com) y obten tu **key** de uso de la **API**.
 
-6. Ir al archivo `src\functions\movies-functions.js` y poner tu key en la constante `API_KEY_MOVIES`
+6. Ir al archivo `src\functions\movies-functions.js` y poner tu **key** en la constante `API_KEY_MOVIES`
 
 7. Después ejecutar el comando: 
 
