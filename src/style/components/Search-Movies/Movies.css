@@ -1,0 +1,11 @@
+.SearchMovies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .listMovies{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

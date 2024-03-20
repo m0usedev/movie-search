@@ -1,0 +1,10 @@
+@import './Button.css';
+
+.ButtonIcon {
+  width: 35px;
+  height: 35px;
+  img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto;
+  }
+}

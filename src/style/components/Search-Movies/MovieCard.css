@@ -1,0 +1,49 @@
+.MovieCard {
+  width: fit-content;
+  a {
+    width: var(--movie-card-width);
+    height: var(--movie-card-height);
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    border: 2px solid var(--card-base-border-color);
+    border-radius: 10px;
+
+    transition: 500ms;
+
+    &:hover {
+      background-color: var(--card-base-hover-background-color);
+      transition: 500ms;
+      cursor: pointer;
+
+      &:active {
+        background-color: var(--card-base-active-background-color);
+      }
+    }
+
+    .title-movie  {
+      width: 100%; /* Ancho deseado del contenedor */
+      overflow: hidden; /* Para ocultar el texto que se desborda verticalmente */
+      white-space: normal; /* Establece el espacio en blanco para permitir saltos de línea */
+      text-overflow: ellipsis; /* Agrega elipsis si el texto se desborda */
+      display: -webkit-box; /* Para navegadores basados en WebKit */
+      -webkit-line-clamp: 3; /* Limita el número de líneas a mostrar */
+      -webkit-box-orient: vertical; /* Orientación vertical */
+    }
+    
+
+    img {
+      width: 100%;
+      max-width: calc(var(--movie-card-width) - 20px);
+      height: auto;
+      max-height: calc(var(--movie-card-height) - 100px);
+    }
+  }
+}

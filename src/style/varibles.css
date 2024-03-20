@@ -1,0 +1,44 @@
+/*Colors*/
+*{
+  --blue-down: #407EC0;
+  --blue-intense: #007bff;
+  --gray-dark: #242424;
+}
+
+/*Buttons*/
+* {
+  --button-base-border-color : var(--blue-intense);
+  --button-base-hover-border-color : var(--blue-intense);
+
+  --button-base-background-color : var(--blue-down);
+  --button-base-hover-background-color : var(--blue-intense);
+
+  --button-base-content-color : black;
+  --button-base-hover-content-color : white;
+}
+/*input*/
+* {
+  --input-base-border-color : var(--blue-intense);
+  --input-base-hover-border-color : var(--blue-intense);
+
+  --input-base-background-color : var(--blue-down);
+  --input-base-hover-background-color : var(--blue-intense);
+
+  --input-base-content-color : black;
+  --input-base-hover-content-color : white;
+}
+/*Card*/
+* {
+  --card-base-border-color : var(--blue-intense);
+  --card-base-hover-border-color : var(--blue-intense);
+
+  --card-base-background-color : ;
+  --card-base-hover-background-color : var(--blue-down);
+
+  --card-base-active-background-color : var(--blue-intense);
+}
+/*Card-Movie*/
+* {
+  --movie-card-width : 300px;
+  --movie-card-height : 500px;
+}

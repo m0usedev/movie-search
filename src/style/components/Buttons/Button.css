@@ -1,0 +1,24 @@
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid var(--button-base-border-color); /* Color del borde */
+  border-radius: 10px; /* Esquinas redondeadas */
+  background-color: var(--button-base-background-color);
+  color: var(--button-base-content-color);
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: var(--button-base-hover-background-color); /* Color de fondo al pasar el ratón */
+    color: var(--button-base-hover-content-color); /* Color del texto al pasar el ratón */
+  }
+
+  &:active {
+    transform: translateY(1px); /* Efecto de clic */
+  }
+}

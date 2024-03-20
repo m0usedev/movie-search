@@ -1,0 +1,11 @@
+@import './varibles.css';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  color: white;
+  background-color: var(--gray-dark);
+}

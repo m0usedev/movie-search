@@ -1,0 +1,25 @@
+input[type="text"] {
+  padding: 5px; 
+  border: 2px solid var(--input-base-border-color);
+  border-radius: 10px;
+  background-color: var(--input-base-background-color);
+  color: var(--input-base-content-color);
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: var(--input-base-hover-background-color); /* Color de fondo al pasar el ratón */
+    color: var(--input-base-hover-content-color); /* Color del texto al pasar el ratón */
+  }
+
+  &:focus {
+    outline: none; /* Elimina el contorno al enfocar */
+    border-color: var(--input-base-hover-background-color); /* Cambia el color del borde al enfocar */
+ }
+
+  &::placeholder {
+    color: var(--button-base-hover-content-color);
+  }
+}
