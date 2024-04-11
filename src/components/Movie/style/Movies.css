@@ -1,8 +1,14 @@
-.SearchMovies {
+.Movies {
+  margin: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  .header-movies {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
   .listMovies{
     width: 100%;
     display: flex;

@@ -1,18 +1,24 @@
 import PropTypes from 'prop-types';
 
-import '../../style/components/Search-Movies/MovieCard.css'
+import './style/MovieCard.css'
 
 const IMDBURL = 'https://www.imdb.com/title/'
 
-export default function MovieCard ({ title, year, img, imdbID }) {
+export default function MovieCard({ title, year, img, imdbID }) {
   return (
     <section className="MovieCard">
-      <a href={IMDBURL+imdbID}>
+      <a href={IMDBURL + imdbID}>
         <div>
-          <img src={img} alt={title} title={title}/>
+          <img 
+            src   = {img} 
+            alt   = {title} 
+            title = {title}
+          />
         </div>
         <div>
-          <h3 className='title-movie'>{title}</h3>
+          <h3 className='title-movie'>
+            {title}
+          </h3>
         </div>
         <div>
           <span>{year}</span>

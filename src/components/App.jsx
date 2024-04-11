@@ -1,4 +1,4 @@
-import Movies from './Search-Movies/Movies'
+import Movies from './Movie/Movie'
 
 function App() {
 

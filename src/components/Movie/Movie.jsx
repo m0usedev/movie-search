@@ -1,34 +1,37 @@
 import { useState } from 'react'
 
-import useMovies from '../../hooks/useMovies.jsx'
+import useMovies from './hooks/useMovies.jsx'
 
 import MovieSearch from './MovieSearch.jsx'
+import MovieFilter from './MovieFilter.jsx'
 import MovieList from './MovieList.jsx'
 import LoadingList from '../List/LoadingList.jsx'
 import ErrorList from '../List/ErrorList.jsx'
 
-import '../../style/components/Search-Movies/Movies.css'
+import './style/Movies.css'
 
 export default function Movies() {
   const [title, setTitle] = useState(null);
   const [firstYear, setFirstYear] = useState(null);
   const [secondYear, setSecondYear] = useState(null);
   const [order, setOrder] = useState(null);
-  
+
   const { movies, loading, errorSearch } = useMovies({ title, firstYear, secondYear, order });
-  
+
 
   const titleSearch = (titleS) => {
     setTitle(titleS)
   }
 
   const yearSearch = ({ firstY, secondY = null }) => {
-    if(!secondY){
-      setFirstYear(firstY)
-      setSecondYear(firstY)
-    }else{
-      setFirstYear(firstY)
-      setSecondYear(secondY)
+    if(firstYear!=firstY || secondYear!=secondY) {
+      if (!secondY) {
+        setFirstYear(firstY)
+        setSecondYear(firstY)
+      } else {
+        setFirstYear(firstY)
+        setSecondYear(secondY)
+      }
     }
   }
 
@@ -38,13 +41,13 @@ export default function Movies() {
         setOrder(['title', 'asc'])
         break;
       case 'ZA':
-        setOrder(['title','down'])
+        setOrder(['title', 'down'])
         break;
       case 'anioUp':
         setOrder(['year', 'asc'])
         break;
       case 'anioDown':
-        setOrder(['year','down'])
+        setOrder(['year', 'down'])
         break;
       default:
         setOrder(null)
@@ -53,9 +56,13 @@ export default function Movies() {
   };
 
   return (
-    <div className="module SearchMovies">
-      <header>
-        <MovieSearch titleSearch={titleSearch} yearSearch={yearSearch} orderMovies={orderMovies}/>
+    <div className="Movies">
+      <header className='header-movies'>
+        <MovieSearch 
+          titleSearch = {titleSearch} 
+          yearSearch  = {yearSearch} 
+        />
+        <MovieFilter orderMovies = {orderMovies} />
       </header>
       <section className='listMovies' >
         {
@@ -64,7 +71,7 @@ export default function Movies() {
             :
             loading ?
               <LoadingList />
-            :
+              :
               null
         }
       </section>
@@ -76,9 +83,9 @@ export default function Movies() {
               :
               loading ?
                 <LoadingList />
-              :
+                :
                 null
-          :
+            :
             null
         }
       </footer>

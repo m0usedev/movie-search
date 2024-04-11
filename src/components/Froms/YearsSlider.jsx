@@ -6,7 +6,7 @@ import { debounce } from '@mui/material';
 
 import PropTypes from 'prop-types';
 
-import '../../style/components/Froms/YearsSlider.css'
+import './style/YearsSlider.css'
 
 export default function YearsSlider({ firstNumber, secondNumber, yearSearch }) {
   const [value, setValue] = useState([firstNumber, secondNumber]);

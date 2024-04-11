@@ -1,0 +1,20 @@
+.MovieSearch {
+  .From-Search {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    .part-from {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 10px;
+
+      label {
+        text-align: end;
+      }
+    }
+  }
+}
+
+

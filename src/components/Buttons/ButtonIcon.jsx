@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import '../../style/components/Buttons/ButtonIcon.css'
+import './style/ButtonIcon.css'
 
 export default function ButtonIcon ({ icon, alt = 'icon', title = 'icon', onClick }) {
   return (

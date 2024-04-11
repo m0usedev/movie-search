@@ -2,6 +2,7 @@
 .MovieList {
   width: 100%;
   max-width: calc(var(--movie-card-width) * 4);
+  margin: 20px 0;
 
   display: flex;
   flex-wrap: wrap;

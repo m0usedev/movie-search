@@ -11,7 +11,7 @@ export default function useInfiniteScroll ({initialPageNumber}) {
       if(!noMoreScroll) {
         const element = document.documentElement;
         // Verificar si el scroll ha llegado al final de la página
-        if (element.scrollHeight - element.scrollTop <= element.clientHeight) {
+        if ((element.scrollHeight - element.scrollTop) <= element.clientHeight+100) {
           // Incrementar el número de página y establecer loading en true
           setScrollPage(scrollPage+1);
           setNoMoreScroll(true)
