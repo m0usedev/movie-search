@@ -3,7 +3,7 @@
 
 Proyecto desarrollado en React.js para realizar busqueda de peliculas a traves de la API OMDB.
 
-<img src="https://s12.gifyu.com/images/SZTQd.gif" width="300">
+![gift app](https://s12.gifyu.com/images/SZTQd.gif)
 
 ## 📖 Comentarios del desarrollo:
 
